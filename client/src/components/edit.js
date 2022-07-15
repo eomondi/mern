@@ -60,13 +60,9 @@ export default function Edit() {
      headers: {
        'Content-Type': 'application/json'
      },
-   })
-   .catch(error => {
-    window.alert(error);
-    return;
    });
-   
-    navigate("/");
+ 
+   navigate("/");
  }
  
  // This following section will display the form that takes input from the user to update the data.
