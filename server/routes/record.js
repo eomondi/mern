@@ -60,6 +60,7 @@ recordRoutes.route("/update/:id").post(function (req, response) {
         level: req.body.level,   
       }, 
      }
+     db_connect.collection("records").updateOne(myquery, newvalues);
    });
 
 // This section will help you delete a record.
