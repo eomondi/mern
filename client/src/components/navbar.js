@@ -1,4 +1,5 @@
 import React from "react";
+import './app.css';
 
 // We import bootstrap to make our application look better.
 import "bootstrap/dist/css/bootstrap.css";
@@ -12,7 +13,7 @@ export default function Navbar() {
         <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <NavLink className="navbar-brand" to="/">
-          <img style={{"width" : 25 + '%'}} src="https://twitter.com/elomondi/photo" alt=""></img>
+          <img style={{"width" : 25 + '%'}} src="https://picsum.photos/200" alt=""></img>
           </NavLink>
           <button
             className="navbar-toggler"

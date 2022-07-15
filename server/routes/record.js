@@ -51,16 +51,16 @@ recordRoutes.route("/record/add").post(function (req, response) {
 
 // This section will help you update a record by id.
 recordRoutes.route("/update/:id").post(function (req, response) {
-    let db_connect = db.getDb();
-    let myquery = { _id: ObjectId( req.params.id )};
-    let newvalues = {
-        $set: {
-            name: req.body.name,
-            position: req.body.position,
-            level: req.body.level,
-        },
-    }
-});
+    let db_connect = dbo.getDb(); 
+    let myquery = { _id: ObjectId( req.params.id )}; 
+    let newvalues = {   
+      $set: {     
+        name: req.body.name,    
+        position: req.body.position,     
+        level: req.body.level,   
+      }, 
+     }
+   });
 
 // This section will help you delete a record.
 recordRoutes.route("/:id").delete((req, response) => {
